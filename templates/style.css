@@ -1,0 +1,44 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+.video-container {
+    display: none; /* Initially hide the video container */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#startButton {
+    padding: 15px 30px; /* Increase padding to make the button larger */
+    font-size: 20px; /* Larger font size for better readability */
+    border-radius: 50px; /* High border-radius to make it round */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor indicates it's clickable */
+    outline: none; /* Remove focus outline */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+#startButton:hover {
+    background-color: #45a049; /* Darker shade of green on hover */
+}
+.notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+}
